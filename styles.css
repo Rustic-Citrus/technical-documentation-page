@@ -1,0 +1,121 @@
+* {
+    color: black;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background-color: white;
+    padding: 1rem;
+    line-height: 1.5rem;
+}
+
+#navbar {
+    border: grey 2px solid;
+    border-radius: 2px;
+    background-color: #ededed;
+    padding: 1rem;
+    position: fixed;
+    margin-left: 2%;
+    width: 20%;
+    left: 0;
+    height: 80%;
+}
+
+#navbar h1 {
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: lighter;
+    line-height: 2rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+#navbar li {
+    border-top: 2px white;
+    list-style: none;
+    position: relative;
+}
+
+.nav-link {
+    text-decoration: none;
+    display: block;
+}
+
+#main-doc {
+    border: grey 2px solid;
+    border-radius: 2px;
+    position: absolute;
+    margin: 0 2rem 2rem 25%;
+    padding: 4rem;
+    text-align: justify;
+}
+
+.code-figure * {
+    color: black;
+}
+
+.code-figure {
+    background-color: #f1f1f1;
+    padding: 1em 2em;
+    border-radius: 2px;
+    width: 50%;
+    margin: 1em auto;
+}
+
+code {
+    display: block;
+    font-size: 1.2rem;
+    text-align: center;
+    font-family: "Roboto Mono", sans-serif;
+}
+
+.code-caption {
+    display: block;
+    margin-top: 1em;
+    font-style: italic;
+}
+
+.code-caption-fig-text {
+    font-weight: bold;
+}
+
+.latex-symbols {
+    font-family: "Times New Roman", Times, serif;
+    font-size: larger;
+}
+
+@media (max-width: 1000px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0 auto;
+        width: 95%;
+        align-items: center;
+    }
+
+    #navbar {
+        position: static;
+        margin: 0;
+        padding: 1rem;
+        width: 95%;
+    }
+
+    #main-doc {
+        text-align: justify;
+        position: static;
+        padding: 1rem;
+        margin: 0;
+        width: 95%;
+    }
+
+    .main-section {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .code-figure {
+        width: 80%;
+        padding: 1rem;
+    }
+}
